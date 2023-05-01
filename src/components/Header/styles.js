@@ -9,7 +9,7 @@ export const HeaderDiv = styled.header`
   display: flex;
   z-index: 99;
 
-  .container {
+  .row {
     display: flex;
     align-items: center;
     justify-content: space-between;

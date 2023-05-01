@@ -24,7 +24,7 @@ export function Header() {
     <>
       <HeaderDiv>
         <ContainerApp>
-          <div className="container">
+          <div className="row">
             <Logo />
 
             <nav>
