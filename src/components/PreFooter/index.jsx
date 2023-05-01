@@ -1,5 +1,9 @@
-import { ContainerApp, SubTitle, TitleH2 } from '../Application/styles';
-import { ButtonCTA } from '../ButtonCta/styles';
+import {
+  ContainerApp,
+  SubTitle,
+  TitleH2,
+  ButtonStyled,
+} from '../Application/styles';
 import { PreFooterSec } from './styles';
 
 export function PreFooterSection() {
@@ -13,7 +17,7 @@ export function PreFooterSection() {
             quem está na área atuando com projetos altamente renomados.
           </SubTitle>
         </div>
-        <ButtonCTA>Fazer parte da lista de espera</ButtonCTA>
+        <ButtonStyled href="#">Fazer parte da lista de espera</ButtonStyled>
       </ContainerApp>
     </PreFooterSec>
   );

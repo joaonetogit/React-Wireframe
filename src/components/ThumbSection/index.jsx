@@ -1,5 +1,9 @@
-import { ContainerApp, SubTitle, TitleH2 } from '../Application/styles';
-import { ButtonCTA } from '../ButtonCta/styles';
+import {
+  ContainerApp,
+  SubTitle,
+  TitleH2,
+  ButtonStyled,
+} from '../Application/styles';
 import { ThumbSec } from './styles';
 import ThumbArchive from '../../assets/thumb.svg';
 
@@ -14,7 +18,7 @@ export function ThumbSection() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </SubTitle>
           </div>
-          <ButtonCTA>Call to action</ButtonCTA>
+          <ButtonStyled href="#">Call to action</ButtonStyled>
         </div>
         <div className="all-images">
           {Array.from({ length: 12 }).map((_, index) => (

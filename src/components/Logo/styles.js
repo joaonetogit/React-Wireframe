@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ButtonCTA = styled.button`
+export const ButtonStyled = styled.button`
   font-family: 'Sora', sans-serif;
   display: inline-block;
   border-radius: 0.5rem;

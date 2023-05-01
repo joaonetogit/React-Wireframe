@@ -1,5 +1,4 @@
-import { ContainerApp } from '../Application/styles';
-import { ButtonCTA } from '../ButtonCta/styles';
+import { ContainerApp, ButtonStyled } from '../Application/styles';
 import { Logo } from '../Logo';
 import { MenuItem } from '../MenuItem';
 import { HeaderDiv } from './styles';
@@ -37,7 +36,7 @@ export function Header() {
                   );
                 })}
             </ul>
-            <ButtonCTA href="#">Call to action</ButtonCTA>
+            <ButtonStyled href="#">Call to action</ButtonStyled>
           </nav>
 
           <div className="menu-mobile">
