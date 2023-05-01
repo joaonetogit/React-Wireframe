@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
   html {
     font-size: 62.5%;
 
-    @include responsive(480px) {
+    @media screen and (max-width: 480px){
       font-size: 55%;
     }
   }
