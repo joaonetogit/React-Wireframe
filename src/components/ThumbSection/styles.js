@@ -51,7 +51,7 @@ export const ThumbSec = styled.section`
   }
 
   @media screen and (max-width: 480px) {
-    margin-top: 4rem;
+    padding-top: 4rem;
 
     .all-images {
       gap: 0.5rem 2%;

@@ -55,10 +55,9 @@ export const CardsSec = styled.section`
   }
 
   @media screen and (max-width: 480px) {
-    padding: 4rem 0;
+    padding: 4rem 0 0;
 
     .main-area {
-      padding-bottom: 4rem;
       .title {
         p {
           text-align: center;

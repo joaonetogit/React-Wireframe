@@ -27,6 +27,10 @@ export const HeaderDiv = styled.header`
       margin-right: 3.2rem;
       gap: 3.2rem;
     }
+
+    & > a {
+      padding: 1.2rem 3.4rem;
+    }
   }
 
   @media screen and (max-width: 991px) {
