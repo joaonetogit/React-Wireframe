@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Hero = styled.div`
+export const Hero = styled.section`
   padding: 7.2rem 0;
   margin-top: 8.8rem;
 
