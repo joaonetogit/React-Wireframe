@@ -22,7 +22,6 @@ export const CardDiv = styled.div`
     h3,
     p {
       text-align: center;
-      margin-top: 0.8rem;
       line-height: 150%;
     }
   }

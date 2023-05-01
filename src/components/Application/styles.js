@@ -22,6 +22,7 @@ export const TitleH2 = styled.h2`
   line-height: 125%;
   letter-spacing: -0.1rem;
   color: #fff;
+  margin-bottom: 8px;
 `;
 export const TitleH3 = styled.h3`
   font-family: 'Sora', sans-serif;
@@ -29,6 +30,7 @@ export const TitleH3 = styled.h3`
   font-weight: 600;
   line-height: 125%;
   letter-spacing: -0.1rem;
+  margin-bottom: 8px;
   color: #fff;
 `;
 export const SubTitle = styled.p`
