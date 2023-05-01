@@ -25,7 +25,7 @@ export const Hero = styled.div`
         color: #393c40;
       }
 
-      .btn-primary {
+      a {
         padding: 1.7rem 3.7rem;
       }
     }
@@ -38,10 +38,6 @@ export const Hero = styled.div`
       max-width: 48.8rem;
       height: 49.6rem;
       background-color: #f7f8fa;
-
-      .animacao {
-        animation: pulse 5s infinite;
-      }
     }
   }
 

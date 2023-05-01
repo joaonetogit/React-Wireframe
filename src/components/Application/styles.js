@@ -31,3 +31,11 @@ export const TitleH3 = styled.h3`
   letter-spacing: -0.1rem;
   color: #fff;
 `;
+export const SubTitle = styled.p`
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+  opacity: 0.7;
+`;

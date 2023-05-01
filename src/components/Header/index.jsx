@@ -21,32 +21,30 @@ const MenuHeader = [
 
 export function Header() {
   return (
-    <>
-      <HeaderDiv>
-        <ContainerApp>
-          <div className="row">
-            <Logo />
+    <HeaderDiv>
+      <ContainerApp>
+        <div className="row">
+          <Logo />
 
-            <nav>
-              <ul>
-                {MenuHeader &&
-                  MenuHeader.map((item, index) => {
-                    return (
-                      <li key={index}>
-                        <MenuItem link={item.link} title={item.title} />
-                      </li>
-                    );
-                  })}
-              </ul>
-              <ButtonCTA href="#">Call to action</ButtonCTA>
-            </nav>
+          <nav>
+            <ul>
+              {MenuHeader &&
+                MenuHeader.map((item, index) => {
+                  return (
+                    <li key={index}>
+                      <MenuItem link={item.link} title={item.title} />
+                    </li>
+                  );
+                })}
+            </ul>
+            <ButtonCTA href="#">Call to action</ButtonCTA>
+          </nav>
 
-            <div className="menu-mobile">
-              <MenuItem link="#" title="Mobile" />
-            </div>
+          <div className="menu-mobile">
+            <MenuItem link="#" title="Mobile" />
           </div>
-        </ContainerApp>
-      </HeaderDiv>
-    </>
+        </div>
+      </ContainerApp>
+    </HeaderDiv>
   );
 }
