@@ -1,7 +1,9 @@
+import LogoArchive from '../../assets/logo.svg';
+
 export function Logo() {
   return (
     <>
-      <div>Logo</div>
+      <img src={LogoArchive} alt="" />
     </>
   );
 }

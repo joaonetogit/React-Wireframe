@@ -1,9 +1,11 @@
-import { ButtonCta } from '../ButtonCta';
+import { Header } from '../Header';
+import { Footer } from '../Footer';
 
 export function Application() {
   return (
     <>
-      <ButtonCta />
+      <Header />
+      <Footer />
     </>
   );
 }

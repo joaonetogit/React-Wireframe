@@ -1,9 +1,9 @@
 import { ButtonCTA } from './styles';
 
-export function ButtonCta() {
+export function ButtonCta({ link }) {
   return (
     <>
-      <ButtonCTA>Button CTA</ButtonCTA>
+      <ButtonCTA href={link}>Button CTA</ButtonCTA>
     </>
   );
 }
