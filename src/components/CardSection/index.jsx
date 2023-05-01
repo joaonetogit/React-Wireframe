@@ -1,4 +1,4 @@
-import { SubTitle, TitleH2 } from '../Application/styles';
+import { ContainerApp, SubTitle, TitleH2 } from '../Application/styles';
 import { Card } from '../Card';
 import { CardsSec } from './styles';
 
@@ -23,22 +23,28 @@ const CardsContent = [
 export function CardsSection() {
   return (
     <CardsSec>
-      <div className="main-area">
-        <div className="title">
-          <TitleH2>Título</TitleH2>
-          <SubTitle>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </SubTitle>
+      <ContainerApp>
+        <div className="main-area">
+          <div className="title">
+            <TitleH2>Título</TitleH2>
+            <SubTitle>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </SubTitle>
+          </div>
+          <div className="all-cards">
+            {CardsContent &&
+              CardsContent.map((item, index) => {
+                return (
+                  <Card
+                    key={index}
+                    title={item.title}
+                    subtitle={item.subtitle}
+                  />
+                );
+              })}
+          </div>
         </div>
-        <div className="all-cards">
-          {CardsContent &&
-            CardsContent.map((item, index) => {
-              return (
-                <Card title={item.title} subtitle={item.subtitle} key={index} />
-              );
-            })}
-        </div>
-      </div>
+      </ContainerApp>
     </CardsSec>
   );
 }

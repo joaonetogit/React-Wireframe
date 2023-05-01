@@ -23,6 +23,48 @@ export const CardsSec = styled.section`
       display: flex;
       justify-content: space-between;
       margin-top: 4.8rem;
+
+      & > div:nth-child(2) {
+        background-color: #fff;
+
+        h3 {
+          color: #050110;
+        }
+
+        p {
+          color: #393c40;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .main-area {
+      .all-cards {
+        width: 100%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .main-area {
+      .all-cards {
+        flex-direction: column;
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 4rem 0;
+
+    .main-area {
+      padding-bottom: 4rem;
+      .title {
+        p {
+          text-align: center;
+          max-width: 80%;
+        }
+      }
     }
   }
 `;

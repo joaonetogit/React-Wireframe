@@ -27,15 +27,24 @@ export const CardDiv = styled.div`
     }
   }
 
-  &.white {
-    background-color: $white;
+  @media screen and (max-width: 1200px) {
+    width: 32%;
+  }
 
-    h3 {
-      color: $gray-colors-100;
+  @media screen and (max-width: 991px) {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 3rem;
+    margin-bottom: 2rem;
+
+    &:last-child {
+      margin-bottom: 0;
     }
 
-    p {
-      color: $gray-colors-300;
+    .info {
+      max-width: 100%;
+      margin-top: 2rem;
     }
   }
 `;
