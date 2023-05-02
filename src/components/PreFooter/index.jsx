@@ -1,5 +1,5 @@
 import {
-  ContainerApp,
+  Container,
   SubTitle,
   TitleH2,
   ButtonStyled,
@@ -10,7 +10,7 @@ import { PreFooterSec } from './styles';
 export function PreFooterSection() {
   return (
     <PreFooterSec>
-      <ContainerApp>
+      <Container>
         <Column>
           <TitleH2>Front-end descomplicado e direto ao ponto!</TitleH2>
           <SubTitle>
@@ -20,7 +20,7 @@ export function PreFooterSection() {
         </Column>
 
         <ButtonStyled href="#">Fazer parte da lista de espera</ButtonStyled>
-      </ContainerApp>
+      </Container>
     </PreFooterSec>
   );
 }

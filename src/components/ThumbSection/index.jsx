@@ -1,5 +1,5 @@
 import {
-  ContainerApp,
+  Container,
   SubTitle,
   TitleH2,
   ButtonStyled,
@@ -10,7 +10,7 @@ import ThumbArchive from '../../assets/thumb.svg';
 export function ThumbSection() {
   return (
     <ThumbSec>
-      <ContainerApp>
+      <Container>
         <div className="top">
           <div className="title">
             <TitleH2>Título</TitleH2>
@@ -27,7 +27,7 @@ export function ThumbSection() {
             </div>
           ))}
         </div>
-      </ContainerApp>
+      </Container>
     </ThumbSec>
   );
 }

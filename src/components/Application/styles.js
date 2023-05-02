@@ -4,7 +4,7 @@ const FONT_SORA = "'Sora', sans-serif;";
 const COLOR_WHITE = '#FFFFFF';
 const COLOR_BLACK = '#050110';
 
-export const ContainerApp = styled.div`
+export const Container = styled.div`
   width: 100%;
   max-width: 124.6rem;
   margin: 0 auto;

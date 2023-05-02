@@ -1,4 +1,4 @@
-import { ContainerApp, ButtonStyled, Row } from '../Application/styles';
+import { Container, ButtonStyled, Row } from '../Application/styles';
 import { Logo } from '../Logo';
 import { MenuItem } from '../MenuItem';
 import { HeaderDiv } from './styles';
@@ -21,7 +21,7 @@ const MenuHeader = [
 export function Header() {
   return (
     <HeaderDiv>
-      <ContainerApp>
+      <Container>
         <Row>
           <Logo />
 
@@ -43,7 +43,7 @@ export function Header() {
             <MenuItem link="#" title="Mobile" />
           </div>
         </Row>
-      </ContainerApp>
+      </Container>
     </HeaderDiv>
   );
 }

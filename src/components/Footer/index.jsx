@@ -4,7 +4,7 @@ import LogoBoost from '../../assets/boost.svg';
 import LogoInstagram from '../../assets/instagram.svg';
 import LogoLinkedin from '../../assets/linkedin.svg';
 import LogoYoutube from '../../assets/youtube.svg';
-import { ContainerApp, TitleH6 } from '../Application/styles';
+import { Container, TitleH6 } from '../Application/styles';
 
 const Socials = [
   {
@@ -27,7 +27,7 @@ const Socials = [
 export function Footer() {
   return (
     <FooterSec>
-      <ContainerApp>
+      <Container>
         <div className="column">
           <main>
             <div className="area-left">
@@ -94,7 +94,7 @@ export function Footer() {
             </div>
           </div>
         </div>
-      </ContainerApp>
+      </Container>
     </FooterSec>
   );
 }

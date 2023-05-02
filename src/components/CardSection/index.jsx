@@ -1,4 +1,4 @@
-import { ContainerApp, SubTitle, TitleH2 } from '../Application/styles';
+import { Container, SubTitle, TitleH2 } from '../Application/styles';
 import { Card } from '../Card';
 import { CardsSec } from './styles';
 
@@ -23,7 +23,7 @@ const CardsContent = [
 export function CardsSection() {
   return (
     <CardsSec>
-      <ContainerApp>
+      <Container>
         <div className="main-area">
           <div className="title">
             <TitleH2>Título</TitleH2>
@@ -44,7 +44,7 @@ export function CardsSection() {
               })}
           </div>
         </div>
-      </ContainerApp>
+      </Container>
     </CardsSec>
   );
 }
