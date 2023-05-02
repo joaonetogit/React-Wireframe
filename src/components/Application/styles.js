@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
-const FONT_SORA = "font-family: 'Sora', sans-serif;";
-const FONT_INTER = "font-family: 'Inter', sans-serif;";
-const COLOR_WHITE = 'color: #FFFFFF';
-const COLOR_BLACK = 'color: #050110';
+const FONT_SORA = "'Sora', sans-serif;";
+const COLOR_WHITE = '#FFFFFF';
+const COLOR_BLACK = '#050110';
 
 export const ContainerApp = styled.div`
   width: 100%;
@@ -18,42 +17,55 @@ export const Row = styled.div`
   justify-content: space-between;
 `;
 
-const BaseTitle = styled.div`
-  ${FONT_SORA}
+export const Column = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+`;
+
+export const TitleH1 = styled.h1`
+  font-family: ${FONT_SORA};
   font-weight: 600;
   line-height: 125%;
   letter-spacing: -0.1rem;
   margin-bottom: 8px;
-`;
-
-export const TitleH1 = styled.h1`
-  ${BaseTitle}
-  ${COLOR_BLACK}
+  color: ${COLOR_BLACK};
   font-size: 4.8rem;
 `;
 
 export const TitleH2 = styled.h2`
-  ${BaseTitle}
-  ${COLOR_WHITE}
+  font-family: ${FONT_SORA};
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: -0.1rem;
+  margin-bottom: 8px;
+  color: ${COLOR_WHITE};
   font-size: 3.2rem;
 `;
 
 export const TitleH3 = styled.h3`
-  ${BaseTitle}
-  ${COLOR_WHITE}
+  font-family: ${FONT_SORA};
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: -0.1rem;
+  margin-bottom: 8px;
+  color: ${COLOR_WHITE};
   font-size: 2.4rem;
 `;
 
 export const TitleH6 = styled.h6`
-  ${BaseTitle}
-  ${COLOR_WHITE}
+  font-family: ${FONT_SORA};
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: -0.1rem;
+  margin-bottom: 8px;
+  color: ${COLOR_WHITE};
   font-size: 1.6rem;
   margin-bottom: 2.4rem;
 `;
 
 export const SubTitle = styled.p`
-  ${FONT_INTER}
-  ${COLOR_WHITE}
+  color: ${COLOR_WHITE};
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -62,7 +74,6 @@ export const SubTitle = styled.p`
 
 export const ButtonStyled = styled.a`
   ${FONT_SORA}
-  ${COLOR_BLACK}
   width: fit-content;
   display: flex;
   justify-content: center;
@@ -71,6 +82,7 @@ export const ButtonStyled = styled.a`
   background-color: #f67acb;
   padding: 2rem 4rem;
   font-size: 16px;
+  color: ${COLOR_BLACK};
   line-height: 100%;
   font-weight: 600;
   transition: all 0.3s ease-in-out;
