@@ -9,12 +9,6 @@ export const HeaderDiv = styled.header`
   display: flex;
   z-index: 99;
 
-  .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
   .menu-mobile {
     display: none;
   }

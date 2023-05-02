@@ -12,6 +12,12 @@ export const ContainerApp = styled.div`
   padding: 0 1.5rem;
 `;
 
+export const Row = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
 const BaseTitle = styled.div`
   ${FONT_SORA}
   font-weight: 600;
@@ -36,6 +42,13 @@ export const TitleH3 = styled.h3`
   ${BaseTitle}
   ${COLOR_WHITE}
   font-size: 2.4rem;
+`;
+
+export const TitleH6 = styled.h6`
+  ${BaseTitle}
+  ${COLOR_WHITE}
+  font-size: 1.6rem;
+  margin-bottom: 2.4rem;
 `;
 
 export const SubTitle = styled.p`

@@ -4,41 +4,35 @@ export const Hero = styled.section`
   padding: 7.2rem 0;
   margin-top: 8.8rem;
 
-  .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    .text {
-      width: 100%;
-      max-width: 64rem;
-      h1 {
-        margin-bottom: 2rem;
-      }
-
-      p {
-        width: 100%;
-        max-width: 48.8rem;
-        margin-bottom: 5.6rem;
-        font-size: 1.8rem;
-        line-height: 150%;
-        color: #393c40;
-      }
-
-      a {
-        padding: 1.7rem 3.7rem;
-      }
+  .text {
+    width: 100%;
+    max-width: 64rem;
+    h1 {
+      margin-bottom: 2rem;
     }
 
-    .image {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    p {
       width: 100%;
       max-width: 48.8rem;
-      height: 49.6rem;
-      background-color: #f7f8fa;
+      margin-bottom: 5.6rem;
+      font-size: 1.8rem;
+      line-height: 150%;
+      color: #393c40;
     }
+
+    a {
+      padding: 1.7rem 3.7rem;
+    }
+  }
+
+  .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 48.8rem;
+    height: 49.6rem;
+    background-color: #f7f8fa;
   }
 
   @media screen and (max-width: 1200px) {
@@ -70,19 +64,17 @@ export const Hero = styled.section`
   @media screen and (max-width: 480px) {
     padding: 4rem 0;
 
-    .row {
-      .text {
-        p {
-          margin-bottom: 3rem;
-        }
+    .text {
+      p {
+        margin-bottom: 3rem;
       }
+    }
 
-      .image {
-        height: 30rem;
+    .image {
+      height: 30rem;
 
-        img {
-          max-width: 10rem;
-        }
+      img {
+        max-width: 10rem;
       }
     }
   }

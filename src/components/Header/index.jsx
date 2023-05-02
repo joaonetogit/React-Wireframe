@@ -1,4 +1,4 @@
-import { ContainerApp, ButtonStyled } from '../Application/styles';
+import { ContainerApp, ButtonStyled, Row } from '../Application/styles';
 import { Logo } from '../Logo';
 import { MenuItem } from '../MenuItem';
 import { HeaderDiv } from './styles';
@@ -22,7 +22,7 @@ export function Header() {
   return (
     <HeaderDiv>
       <ContainerApp>
-        <div className="row">
+        <Row>
           <Logo />
 
           <nav>
@@ -42,7 +42,7 @@ export function Header() {
           <div className="menu-mobile">
             <MenuItem link="#" title="Mobile" />
           </div>
-        </div>
+        </Row>
       </ContainerApp>
     </HeaderDiv>
   );

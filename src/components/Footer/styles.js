@@ -28,16 +28,6 @@ export const FooterSec = styled.footer`
       justify-content: space-between;
 
       .item {
-        h6 {
-          font-family: 'Sora' sans-serif;
-          font-weight: 600;
-          font-size: 16px;
-          line-height: 125%;
-          letter-spacing: -1px;
-          color: #fff;
-          margin-bottom: 2.4rem;
-        }
-
         ul {
           display: flex;
           flex-direction: column;
