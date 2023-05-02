@@ -24,6 +24,36 @@ const Socials = [
   },
 ];
 
+const MenuInstitucional = [
+  {
+    name: 'Quems somos',
+    link: '#',
+  },
+  {
+    name: 'Institucional',
+    link: '#',
+  },
+  {
+    name: 'Serviços',
+    link: '#',
+  },
+];
+
+const MenuLinksUteis = [
+  {
+    name: 'Integração',
+    link: '#',
+  },
+  {
+    name: 'Acesso à API',
+    link: '#',
+  },
+  {
+    name: 'Trabalhe Conosco',
+    link: '#',
+  },
+];
+
 export function Footer() {
   return (
     <FooterSec>
@@ -41,30 +71,28 @@ export function Footer() {
               <div className="item">
                 <TitleH6>Lista de páginas</TitleH6>
                 <ul>
-                  <li>
-                    <a href="#">Text link 01</a>
-                  </li>
-                  <li>
-                    <a href="#">Text link 02</a>
-                  </li>
-                  <li>
-                    <a href="#">Text link 03</a>
-                  </li>
-                  <li>
-                    <a href="#">Text link 04</a>
-                  </li>
+                  {MenuInstitucional &&
+                    MenuInstitucional.map((item, index) => {
+                      return (
+                        <li key={index}>
+                          <a href={item.link}>{item.name}</a>
+                        </li>
+                      );
+                    })}
                 </ul>
               </div>
               <div className="item">
                 <TitleH6>Soluções</TitleH6>
 
                 <ul>
-                  <li>
-                    <a href="">Text link 01</a>
-                  </li>
-                  <li>
-                    <a href="">Text link 02</a>
-                  </li>
+                  {MenuLinksUteis &&
+                    MenuLinksUteis.map((item, index) => {
+                      return (
+                        <li key={index}>
+                          <a href={item.link}>{item.name}</a>
+                        </li>
+                      );
+                    })}
                 </ul>
               </div>
               <div className="item">
