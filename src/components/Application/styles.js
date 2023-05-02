@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 
+const FONT_SORA = "font-family: 'Sora', sans-serif;";
+const FONT_INTER = "font-family: 'Inter', sans-serif;";
+const COLOR_WHITE = 'color: #FFFFFF';
+const COLOR_BLACK = 'color: #050110';
+
 export const ContainerApp = styled.div`
   width: 100%;
   max-width: 124.6rem;
@@ -7,43 +12,44 @@ export const ContainerApp = styled.div`
   padding: 0 1.5rem;
 `;
 
+const BaseTitle = styled.div`
+  ${FONT_SORA}
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: -0.1rem;
+  margin-bottom: 8px;
+`;
+
 export const TitleH1 = styled.h1`
-  font-family: 'Sora', sans-serif;
+  ${BaseTitle}
+  ${COLOR_BLACK}
   font-size: 4.8rem;
-  color: #050110;
-  font-weight: 600;
-  line-height: 125%;
-  letter-spacing: -0.1rem;
 `;
+
 export const TitleH2 = styled.h2`
-  font-family: 'Sora', sans-serif;
+  ${BaseTitle}
+  ${COLOR_WHITE}
   font-size: 3.2rem;
-  font-weight: 600;
-  line-height: 125%;
-  letter-spacing: -0.1rem;
-  color: #fff;
-  margin-bottom: 8px;
 `;
+
 export const TitleH3 = styled.h3`
-  font-family: 'Sora', sans-serif;
+  ${BaseTitle}
+  ${COLOR_WHITE}
   font-size: 2.4rem;
-  font-weight: 600;
-  line-height: 125%;
-  letter-spacing: -0.1rem;
-  margin-bottom: 8px;
-  color: #fff;
 `;
+
 export const SubTitle = styled.p`
-  font-family: 'Inter', sans-serif;
+  ${FONT_INTER}
+  ${COLOR_WHITE}
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #ffffff;
   opacity: 0.7;
 `;
 
 export const ButtonStyled = styled.a`
-  font-family: 'Sora', sans-serif;
+  ${FONT_SORA}
+  ${COLOR_BLACK}
   width: fit-content;
   display: flex;
   justify-content: center;
@@ -54,7 +60,6 @@ export const ButtonStyled = styled.a`
   font-size: 16px;
   line-height: 100%;
   font-weight: 600;
-  color: #050110;
   transition: all 0.3s ease-in-out;
 
   &:hover {
