@@ -4,6 +4,12 @@ export const Hero = styled.section`
   padding: 7.2rem 0;
   margin-top: 8.8rem;
 
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .text {
     width: 100%;
     max-width: 64rem;
@@ -44,19 +50,18 @@ export const Hero = styled.section`
   @media screen and (max-width: 991px) {
     .row {
       flex-direction: column;
+    }
+    .text {
+      max-width: 100%;
+      margin-bottom: 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
-      .text {
-        max-width: 100%;
-        margin-bottom: 4rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        h1,
-        p {
-          text-align: center;
-        }
+      h1,
+      p {
+        text-align: center;
       }
     }
   }

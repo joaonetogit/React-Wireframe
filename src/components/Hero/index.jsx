@@ -1,4 +1,4 @@
-import { ButtonStyled, Container, Row, TitleH1 } from '../Application/styles';
+import { ButtonStyled, Container, TitleH1 } from '../Application/styles';
 import { Hero } from './styles';
 import HeroImage from '../../assets/img-hero.svg';
 
@@ -6,7 +6,7 @@ export function HeroSection() {
   return (
     <Hero>
       <Container>
-        <Row>
+        <div className="row">
           <div className="text">
             <TitleH1>Front-end descomplicado e direto ao ponto!</TitleH1>
             <p>
@@ -18,7 +18,7 @@ export function HeroSection() {
           <div className="image">
             <img src={HeroImage} className="animacao" alt="" />
           </div>
-        </Row>
+        </div>
       </Container>
     </Hero>
   );
